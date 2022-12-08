@@ -12,4 +12,4 @@ RUN curl https://raw.githubusercontent.com/prysmaticlabs/prysm/${PRYSM_VERSION}/
 COPY validator-init.sh .
 RUN chmod +x validator-init.sh
 
-CMD [ "/bin/bash", "validator-init.sh" ]
+CMD [ "/bin/sh", "validator-init.sh" ]
